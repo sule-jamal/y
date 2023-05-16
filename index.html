@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="css/all.css">   
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Bar</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+    
+
+		.navbar{
+			background: #141314; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: rgb(250, 253, 84);
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 23px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: rgb(14, 30, 247); margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+        .fa-brands{
+            color:rgb(249, 249, 252); font-size: 17px; font-weight: PLAIN; margin-right: 17px;
+        }
+        
+            .fa-sharp{
+                color:rgb(249, 249, 252); font-size: 17px; font-weight: PLAIN; margin-right: 17px;
+        }
+        
+        
+        .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .image1 {
+    flex-basis: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .image2 {
+    flex-basis: 100%;
+    height: 100%;
+    left: 0%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 7%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(253, 59, 25);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .image1-text {
+    position: relative;
+    top: 60%;
+    left: 40%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .image2-text {
+    position: absolute;
+    bottom: 90;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+
+
+	</style>
+   
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv"><img src="logo.png" alt="Logo" style="border-radius: 80%; height: 200px; width: 368px; object-fit: cover;">
+			<div class="logo"><a href="#">CRC</a> <p style="font-size: 14px; color: rgb(248, 236, 236);">Oasis of Research Data and. Business Analytic skills</p></font-size:></div>
+			<ul>
+                <br>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-flickr"></i>
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+            </br>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+				<button><a href="#">SignIn</a></button>
+                
+			</ul>
+		</div>
+        
+	</nav>
+   
+    
+    <div class="main">
+        <div class="image1"><img src="imag1.jpg" alt="Image 1">
+          <h2 class="image-text"><p>"The best way to predict the future is to create it."</p>
+            <p>- Abraham Lincoln</p>
+          </h2>
+        </div><div class="image2"><img src="image5.jpeg" alt="Image2">
+          <h2 class="image-text">
+            <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+            <p class="author">- Winston Churchill</p>
+          </h2>
+        </div>
+      </div>
+ 
+</body>
+</html>
